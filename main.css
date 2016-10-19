@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: tahoma;
+    font-size: 1.1em;
+    font-style: normal;
+    line-height: 1.6;
+    color: #FFF;
+    background: #555 url("images/background.jpg") no-repeat fixed;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.floatcenter {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+}
+
+.main {
+    width:80%;
+    margin: auto;
+    background-color: rgba(85, 85, 85, 0.5);
+}
+
+.grid {
+    width: 1200px;
+    margin: auto;
+}
+
+
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.navgrid {
+    width: 800px;
+    margin: auto;
+    list-style: none;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+.navgrid ul {
+     display: inline-block;
+     text-align: center;
+     margin: 0px;
+     padding: 0px;
+     width: 100%;
+    /*-webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;*/
+ }
+
+.navgrid li {
+    margin: 2px;
+    display: inline-block;
+}
+
+.navgrid a {
+    display: inline-block;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: #fff;
+    border-style: solid;
+    text-decoration: none;
+}
+
+.navgrid a:link {
+    color: #fff;
+    border-color: #fff;
+}
+
+.navgrid a:visited {
+    color: #fff;
+    border-color: #fff;
+}
+
+.navgrid a:hover {
+    color: #f00;
+    border-color: #f00;
+}
+
+.navgrid a:active {
+    color: #f55;
+    border-color: #f55;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+.col-75 {
+    width: 75%;
+}
+
+.col-66 {
+    width: 66.666%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-33 {
+    width: 33.333%;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.col-16 {
+    width: 16.666;
+}
+
+.col-12 {
+    width: 12.5%;
+}
+
+[class*='col-'] {
+    float: left;
+    padding: 1em;
+}
+
+.navcol {
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.box {
+    position: relative;
+}
+
+.boxtitle {
+    position: absolute;
+
+}
+
+.boxsubtitle {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
