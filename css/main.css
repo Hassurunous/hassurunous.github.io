@@ -8,7 +8,58 @@ body {
     font-style: normal;
     line-height: 1.6;
     color: #FFF;
-    background: #555 url("images/background.jpg") no-repeat fixed;
+    background: #555;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.backgroundImg {
+    background: #555 url("../images/background.jpg") no-repeat fixed;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 0;
+
+    display: block;
+    width: 100%;
+    height: 800px;
+
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.body {
+    z-index: 1;
+    overflow: auto;
+    position: relative;
+}
+
+.body::before {
+    content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url('../images/background.jpg');
+  background-size:cover;
+  width: 150%;
+  height: 150%;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 h1, h2, h3 {
@@ -41,11 +92,11 @@ h1, h2, h3 {
 }
 
 .navgrid {
-    width: 800px;
+    width: 100%;
     margin: auto;
     list-style: none;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #fff;
 }
 .navgrid ul {
@@ -148,12 +199,12 @@ h1, h2, h3 {
 }
 
 .boxtitle {
-    position: absolute;
+    position: relative;
 
 }
 
 .boxsubtitle {
-    position: absolute;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     left: 0;
