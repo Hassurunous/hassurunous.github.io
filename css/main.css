@@ -29,52 +29,42 @@ body, html {
     width: 100%;
     height: 800px;
 
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -o-filter: blur(1px);
-    -ms-filter: blur(1px);
-    filter: blur(1px);
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
 }
 
 .body {
-    z-index: 1;
+    z-index: 9999;
     overflow: auto;
     position: relative;
 }
 
 .body::before {
     content: "";
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: -1;
-
-  display: block;
-  background-image: url('../images/background.jpg');
-  background-size:cover;
-  width: 150%;
-  height: 150%;
-
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 
 h1, h2, h3 {
     text-align: center;
     font-weight: bolder;
+    margin-top: 0;
 }
 
 .floatcenter {
     width: 100%;
     display: inline-block;
     margin: auto;
+    height: 100%;
 }
 
 .main {
-    width:80%;
+    max-width:100%;
     margin: auto;
     background-color: rgba(85, 85, 85, 0.5);
 }
@@ -92,12 +82,18 @@ h1, h2, h3 {
 }
 
 .navgrid {
-    width: 100%;
     margin: auto;
     list-style: none;
     text-align: center;
     font-size: 1.2em;
     color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 60px;
+    z-index: 1;
+    background-color: rgba(85, 85, 85, 1);
 }
 .navgrid ul {
      display: inline-block;
@@ -188,6 +184,14 @@ h1, h2, h3 {
 .navcol {
     margin: 0px;
     padding: 0px;
+}
+
+/*Anchor for the navigation on the page.*/
+.anchor {
+    float: left;
+    margin-top: -60px;
+    padding-top: 60px;
+    display: hidden;
 }
 
 .contact {

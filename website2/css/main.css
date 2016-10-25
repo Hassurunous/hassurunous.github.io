@@ -1,0 +1,21 @@
+body, html {
+    width: 1200px;
+}
+
+#trapezoid {
+	border-top: 100px solid red;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	width: 100px;
+}
+
+/*This is how we shape the CSS around the rounded trapezoidal elements in the spinner.*/
+.container{
+    font-size: 12px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  text-align: justify;
+  -moz-hyphens: manual;
+  -moz-shape-inside: polygon(0px 0px, 0 300px, 300px 300px);
+}

@@ -1,0 +1,50 @@
+#sun {
+	position: absolute;
+	left: 50%;
+	top: 100%;
+}
+
+#enterprise {
+	position: absolute;
+
+	/* This is the point we rotate the object around */
+	top: 100%;
+	left: 50%;
+
+	/*
+	 * CSS Please is your friend for ensuring cross browser syntax */
+	-webkit-animation: orbit 5s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: orbit 5s linear infinite; /* Firefox 5-15 */
+         -o-animation: orbit 5s linear infinite; /* Opera 12+ */
+            animation: orbit 5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Safari 5 */
+
+
+
+}
+
+
+
+@-webkit-keyframes orbit {
+	from { 	-webkit-transform: rotate(0deg) translateX(400px); }
+	to   {  -webkit-transform: rotate(360deg) translateX(400px); }
+}
+
+@-moz-keyframes orbit {
+	from { 	-moz-transform: rotate(0deg) translateX(400px); }
+	to   {  -moz-transform: rotate(360deg) translateX(400px); }
+}
+
+@-o-keyframes orbit {
+	from { 	-o-transform: rotate(0deg) translateX(400px); }
+	to   {  -o-transform: rotate(360deg) translateX(400px); }
+}
+
+@keyframes orbit {
+	from { 	transform: rotate(0deg) translateX(400px); }
+	to   {  transform: rotate(360deg) translateX(400px); }
+}
+
+
+.entry img {
+	border: none !important;
+}
