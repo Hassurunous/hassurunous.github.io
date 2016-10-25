@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MetaCog Homepage</title>
+        <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
+    </head>
+    <body>
+        <div class="backgroundImg">
+            <!-- <img src="img/logo.png" alt="" /> -->
+        </div>
+        <!-- Fixed title and navigation bar to top of screen, even when scrolling. -->
+        <div class="titlebar">
+            <nav>
+                <a href="#home" onclick="scrollTo('home'); return false;">Home</a>
+                <a href="#about" onclick="scrollTo('about'); return false;">About</a>
+                <a href="#download" onclick="scrollTo('download'); return false;">Download</a>
+                <a href="#contact" onclick="scrollTo('contact'); return false;">Contact Us</a>
+            </nav>
+        </div>
+        <!-- First descriptional div. Should contain product images, including logo, name, and app image, and a short tagline about the application. -->
+        <div id="home" class="anchor"></div>
+        <div class="section mainTitle">
+        </div>
+        <!-- This section is recommended to be a collection of slides describing the purpose and functionality of the app, as well as community guidelines. -->
+        <div id="about" class="anchor"></div>
+        <div class="section productSlides">
+            <h2>Preview Pane Placeholder Title</h2>
+            <div class="container">
+                <p class="sectionText">
+                    Product Preview Slider Tabs Here
+                </p>
+                <div id="img1" class="sliderImg">
+                    <img src="img/fractal1.png" alt="" />
+                </div>
+                <div id="img2" class="sliderImg">
+                    <img src="img/fractal2.png" alt="" />
+                </div>
+                <div id="img3" class="sliderImg">
+                    <img src="img/fractal3.png" alt="" />
+                </div>
+                <div id="img4" class="sliderImg">
+                    <img src="img/fractal4.png" alt="" />
+                </div>
+                <button type="button" id="slidePrev" class="slideBtn prevBtn"><</button>
+                <button type="button" id="slideNext" class="slideBtn nextBtn">></button>
+            </div>
+        </div>
+        <!-- App download icons here. -->
+        <div id="download" class="anchor"></div>
+        <div class="section downloads">
+            <h2>Download for iOS</h2>
+            <p class="sectionText">
+                iOS Download Link Here
+            </p>
+        </div>
+        <!-- Contact Information -->
+        <div id="contact" class="anchor"></div>
+        <div class="section contact">
+            <h2>Contact Us</h2>
+            <img src="img/team.jpeg" alt="" />
+            <p class="sectionText">
+                MetaCogTeam@gmail.com<br>
+                (555) 555-5555<br>
+                Buka Cakrawala, Jose Gutierrez, Gian Franco Vitola, Michael Loubier<br>
+                Make School - Class of 2018<br>
+            </p>
+        </div>
+    <!-- Imported jquery and handlebars in case those are required. Suggest removal if unused. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/handlebars-v4.0.5.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>

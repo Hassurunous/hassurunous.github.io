@@ -1,21 +1,30 @@
+import contentslider.css
+
 body, html {
     width: 1200px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-#trapezoid {
-	border-top: 100px solid red;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	width: 100px;
+.trapezoid {
+	border-top: 500px solid red;
+	border-left: 250px solid transparent;
+	border-right: 250px solid transparent;
+	width: 50%;
+    min-width: 0;
+    position: absolute;
 }
 
-/*This is how we shape the CSS around the rounded trapezoidal elements in the spinner.*/
-.container{
-    font-size: 12px;
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  text-align: justify;
-  -moz-hyphens: manual;
-  -moz-shape-inside: polygon(0px 0px, 0 300px, 300px 300px);
+.trapezoidText {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+svg{
+  overflow:visible;  position:absolute;
+  left:50%;top:50%;  transform: translate(-50%,-50%);
 }
