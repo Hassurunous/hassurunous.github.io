@@ -310,7 +310,7 @@ nav a:active {
 @media screen and (max-width: 414px) {
 
     .titlebar {
-        padding-top: 5px;
+        padding-top: 8px;
         height: 30px;
     }
 
@@ -345,17 +345,17 @@ nav a:active {
 
     nav a {
         font-size: 1em;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 6px;
+        padding-right: 6px;
         text-decoration: none;
         font-weight: bolder;
     }
 
     nav a:first-child {
-        padding-left: 5px;
+        padding-left: 3px;
     }
 
     nav a:last-child {
-        padding-right: 5px;
+        padding-right: 3px;
     }
 }
