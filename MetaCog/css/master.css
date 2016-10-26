@@ -8,7 +8,7 @@ body, html {
 }
 
 .backgroundImg {
-    background: white url("../img/logo.png") no-repeat fixed center;
+    background: white url("../img/logo.png") no-repeat center;
     position: fixed;
     z-index: -2;
 
@@ -67,6 +67,10 @@ nav a:active {
     color: red;
 }
 
+.navbreak {
+    display: none;
+}
+
 /*titlebar encloses the main title header and the navbar, placing them at a fixed position at the top of the screen.*/
 .titlebar {
     position: fixed;
@@ -83,15 +87,15 @@ nav a:active {
 
 /*Various sections split into boxes of height and width equal to the body height and width.*/
 .section {
-    height: calc(100% - 10px);
+    height: calc(100% - 30px);
     width: 100%;
 }
 
 /*Anchor for the navigation on the page.*/
 .anchor {
     float: left;
-    margin-top: -20px;
-    padding-top: 20px;
+    margin-top: -40px;
+    padding-top: 40px;
     display: hidden;
     -webkit-transition: 0.6s ease-in-out;
     transition: 0.6s ease-in-out;
@@ -108,7 +112,7 @@ nav a:active {
     overflow: hidden;
 }
 
-.container {
+.slider {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -172,6 +176,7 @@ nav a:active {
 /*This section for the download links and information about the application.*/
 .downloads {
     background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
 }
 
 .downloads p, .downloads h2 {
@@ -180,10 +185,20 @@ nav a:active {
 
 .downloads img {
     margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-top: 20px;
-    display: block;
+    display: inline-block;
     /*height: 100%;*/
-    width: 20%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 80%;
+    vertical-align: middle;
+}
+
+.downloads img.appstore {
+    width: 200px;
 }
 
 /*This section for contact information, contact links, and other forms of social links.*/
@@ -200,7 +215,7 @@ nav a:active {
     margin-top: 20px;
     display: block;
     /*height: 100%;*/
-    width: 40%;
+    width: 35%;
 }
 
 /*This css is holding the place of whatever elements should be inside the various divs in the website. As the divs are filled in, custom classes may be more reasonable, or change the name of this class to avoid confusion post-release.*/
@@ -209,4 +224,85 @@ nav a:active {
     text-align: center;
     font-size: 18px;
     line-height: 1.5;
+}
+
+
+/*Media Queries*/
+@media screen and (max-width: 560px) {
+
+    .titlebar {
+        padding-top: 5px;
+        height: 30px;
+    }
+
+    .downloads img {
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 20px;
+        display: block;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 70%;
+        vertical-align: middle;
+    }
+
+    .downloads img.appstore {
+        width: 200px;
+    }
+
+    .sectionText {
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.5;
+        vertical-align: middle;
+    }
+
+    .backgroundImg {
+        background: white url("../img/vertbg.png") no-repeat center;
+        position: fixed;
+        top: 20px;
+        z-index: -2;
+
+        display: block;
+        width: 100%;
+        height: 1080px;
+        max-height: 100%;
+        background-size: 100%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 1.25em;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    nav a:first-child {
+        padding-left: 5px;
+    }
+
+    nav a:last-child {
+        padding-right: 5px;
+    }
+
+    .anchor {
+        margin-top: -35px;
+        padding-top: 35px;
+    }
+
+    .sliderImg {
+        padding-top: 100px;
+    }
+
+    .slideBtn {
+        margin-top: 100px;
+    }
 }

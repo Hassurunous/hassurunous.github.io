@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
         <title>MetaCog Homepage</title>
         <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
     </head>
@@ -14,6 +15,9 @@
             <nav>
                 <a href="#home" onclick="scrollTo('home'); return false;">Home</a>
                 <a href="#about" onclick="scrollTo('about'); return false;">About</a>
+                <div class="navbreak">
+                    <br>
+                </div>
                 <a href="#download" onclick="scrollTo('download'); return false;">Download</a>
                 <a href="#contact" onclick="scrollTo('contact'); return false;">Contact Us</a>
             </nav>
@@ -26,9 +30,9 @@
         <div id="about" class="anchor"></div>
         <div class="section productSlides">
             <h2>Preview Pane Placeholder Title</h2>
-            <div class="container">
+            <div class="slider">
                 <p class="sectionText">
-                    Product Preview Slider Tabs Here
+                    <br>
                 </p>
                 <div id="img1" class="sliderImg">
                     <img src="img/fractal1.png" alt="" />
@@ -53,7 +57,7 @@
             <p class="sectionText">
             </p>
             <img src="img/iphone.png" alt="" />
-            <img src="img/appstore.svg" alt="" />
+            <img class="appstore" src="img/appstore.svg" alt="" />
         </div>
         <!-- Contact Information -->
         <div id="contact" class="anchor"></div>

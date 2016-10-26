@@ -1,6 +1,6 @@
 //View Manager for preview pane transitions
 var currentIndex = 0,
-    items = $('.container div:has(img)'),
+    items = $('.slider div:has(img)'),
     itemAmt = items.length,
     images = [];
 
@@ -64,7 +64,7 @@ function showView(newView, exit, start, enter) {
   // Show New View
   currentView = newView;
   console.log(currentView);
-  $(".container").append(newView);
+  $(".slider").append(newView);
   newView.css(start).animate(enter, 400, function() {
       $(this).trigger("imageShow");
       $(".prevBtn").prop("disabled", false);
@@ -81,10 +81,10 @@ function findImageWithId(id) {
   }
 }
 
-$(".container").on("click", ".prevBtn", function(event){
+$(".slider").on("click", ".prevBtn", function(event){
 
   event.preventDefault();
-  console.log("Container > .prevBtn clicked.");
+  console.log("slider > .prevBtn clicked.");
   currentIndex -= 1;
   if (currentIndex < 0) {
       currentIndex = itemAmt - 1;
@@ -94,8 +94,8 @@ $(".container").on("click", ".prevBtn", function(event){
 
 
 // Set up nav links
-$(".container").on("click", ".nextBtn", function(event){
-  console.log("Container > .nextBtn clicked.");
+$(".slider").on("click", ".nextBtn", function(event){
+  console.log("slider > .nextBtn clicked.");
   currentIndex += 1;
   if (currentIndex > itemAmt - 1) {
       currentIndex = 0;
