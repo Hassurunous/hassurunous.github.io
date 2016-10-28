@@ -45,8 +45,8 @@ nav {
 
 nav a {
     font-size: 1.5em;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-decoration: none;
     font-weight: bolder;
 }
@@ -222,8 +222,12 @@ nav a:active {
 .sectionText {
     color: white;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.4em;
     line-height: 1.5;
+}
+
+#responsiveBreak {
+    display:none;
 }
 
 
@@ -305,6 +309,11 @@ nav a:active {
     .slideBtn {
         margin-top: 100px;
     }
+
+    #responsiveBreak {
+        display:inline;
+    }
+
 }
 
 @media screen and (max-width: 414px) {
@@ -357,5 +366,9 @@ nav a:active {
 
     nav a:last-child {
         padding-right: 3px;
+    }
+
+    #responsiveBreak {
+        display:inline;
     }
 }
