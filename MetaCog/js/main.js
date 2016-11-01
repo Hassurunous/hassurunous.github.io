@@ -62,7 +62,7 @@ function showView(newView, exit, start, enter) {
     });
   }
   // Show New View
-  currentView = newView;
+currentView = newView;
   console.log(currentView);
   $(".slider").append(newView);
   newView.css(start).animate(enter, 400, function() {

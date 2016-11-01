@@ -114,6 +114,7 @@ nav a:active {
 
 .slider {
     max-width: 1200px;
+    height: calc(100% - 50px);
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -125,6 +126,7 @@ nav a:active {
     position: absolute;
     text-align: center;
     width: 300%;
+    height: 100%;
     z-index: 1;
 }
 
@@ -133,9 +135,10 @@ nav a:active {
     top: 0;
     left: -33.3333%;
     display: inline-block;
-    /*height: 100%;*/
-    width: 33%;
+    height: calc(100% - 33px);
     z-index: 2;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .slideBtn {
@@ -166,11 +169,11 @@ nav a:active {
 }
 
 .prevBtn {
-    left: 7px;
+    left: 20%;
 }
 
 .nextBtn {
-    right: 7px;
+    right: 20%;
 }
 
 /*This section for the download links and information about the application.*/
@@ -302,12 +305,20 @@ nav a:active {
         padding-top: 35px;
     }
 
-    .sliderImg {
+    /*.sliderImg {
         padding-top: 100px;
     }
 
     .slideBtn {
         margin-top: 100px;
+    }*/
+
+    .prevBtn {
+        left: 1%;
+    }
+
+    .nextBtn {
+        right: 1%;
     }
 
     #responsiveBreak {
