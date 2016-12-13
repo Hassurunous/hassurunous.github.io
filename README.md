@@ -1,6 +1,12 @@
 # hassurunous.github.io
 
+## Michael's Portfolio
 http://hassurunous.github.io
 
+## Check out my projects!
+Under Consctruction permanently (sorry)
 
-Very much under construction. Nav bar especially is misbehaving. All Lorum ipsum. 
+#Contact Michael
+
+
+
